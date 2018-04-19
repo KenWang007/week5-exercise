@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2c30cfb-7780-469b-94fd-edbc4c44c296" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/JavaPraciseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/command/CmdEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/command/CmdMessageConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/command/CmdParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/command/CmdStatusManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/entity/GradeReportBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/entity/Gradereport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/entity/Klass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/entity/StudentGradeItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/entity/StudentInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/service/StudentGradeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/com/thoughtworks/javapracise/transform/CmdIOTransformer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test/com/thoughtworks/javapracise/command/CmdEntryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test/com/thoughtworks/javapracise/entity/GradeReportBuilderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test/com/thoughtworks/javapracise/entity/KlassTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test/com/thoughtworks/javapracise/service/StudentGradeServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/test/com/thoughtworks/javapracise/transform/CmdIOTransformerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/transform/CmdIOTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/transform/CmdIOTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdStatusManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdStatusManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -49,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JavaPraciseApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/JavaPraciseApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Klass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/Klass.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,8 +50,8 @@
       <file leaf-file-name="Gradereport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/Gradereport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding>
                 <element signature="e#245#246#0" expanded="true" />
                 <element signature="e#290#291#0" expanded="true" />
@@ -89,15 +60,6 @@
                 <element signature="e#596#597#0" expanded="true" />
                 <element signature="e#666#667#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CmdIOTransformerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/javapracise/transform/CmdIOTransformerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -111,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentInfo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudentInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="315">
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="e#755#756#0" expanded="true" />
                 <element signature="e#784#785#0" expanded="true" />
@@ -124,14 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CmdEntry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java">
+      <file leaf-file-name="StudentGradeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/service/StudentGradeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -139,11 +98,41 @@
       <file leaf-file-name="CmdIOTransformer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/transform/CmdIOTransformer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="-29">
+              <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaPraciseApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/JavaPraciseApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="24" column="51" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CmdEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CmdStatusManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdStatusManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -539,6 +528,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/transform/CmdIOTransformer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdStatusManager.java" />
       </list>
     </option>
   </component>
@@ -920,10 +910,10 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.45897436" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32948717" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494432" />
       <window_info anchor="bottom" id="Build" weight="0.32948717" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948717" />
       <window_info anchor="right" id="Gradle" />
@@ -968,13 +958,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/service/StudentGradeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -992,17 +975,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/JavaPraciseApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdMessageConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/Gradereport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#245#246#0" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
@@ -1025,6 +1015,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentGradeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/Klass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1041,17 +1038,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentGradeItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/service/StudentGradeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/transform/CmdIOTransformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="-29">
+          <caret line="31" column="55" lean-forward="true" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/JavaPraciseApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1060,29 +1085,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdStatusManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/command/CmdEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/javapracise/entity/StudentInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
         </state>
       </provider>
     </entry>

@@ -20,16 +20,17 @@ public class CmdStatusManager {
 
 
     public String getNextStatus(String input) {
-        Map<String, String> commandToStatus = ImmutableMap.of(
-                MAIN_MENU_DISPLAY_COMMAND, MAIN_MENU_STATUS,
-                ADD_STUDENT_DISPLAY_COMMAND, ADD_STUDENT_STATUS,
-                PRINT_REPORT_DISPLAY_COMMAND, PRINT_REPORT_STATUS);
-
-        String newStatus = commandToStatus.get(input.trim());
-        if (newStatus == null) {
-            newStatus = this.currentStatue;
+        if(input.trim() == MAIN_MENU_DISPLAY_COMMAND){
+            return MAIN_MENU_STATUS;
         }
-        return newStatus;
+        else if(input.trim() == ADD_STUDENT_DISPLAY_COMMAND){
+            return ADD_STUDENT_STATUS;
+        }
+        else  if(input.trim() == PRINT_REPORT_DISPLAY_COMMAND){
+            return PRINT_REPORT_STATUS;
+        }else{
+            return this.currentStatue;
+        }
     }
 
     public boolean isTheSameStatus(String nextStatus) {
