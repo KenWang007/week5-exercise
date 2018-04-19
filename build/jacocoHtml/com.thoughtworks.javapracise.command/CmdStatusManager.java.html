@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CmdStatusManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">java-pracise</a> &gt; <a href="index.source.html" class="el_package">com.thoughtworks.javapracise.command</a> &gt; <span class="el_source">CmdStatusManager.java</span></div><h1>CmdStatusManager.java</h1><pre class="source lang-java linenums">package com.thoughtworks.javapracise.command;
+
+import com.google.common.collect.ImmutableMap;
+
+import java.util.Map;
+
+<span class="fc" id="L7">public class CmdStatusManager {</span>
+
+    public static final String MAIN_MENU_STATUS = &quot;main_menu_status&quot;;
+    public static final String ADD_STUDENT_STATUS = &quot;add_student_status&quot;;
+    public static final String PRINT_REPORT_STATUS = &quot;print_report_status&quot;;
+    public static final String MAIN_MENU_DISPLAY_COMMAND = &quot;-1&quot;;
+    public static final String ADD_STUDENT_DISPLAY_COMMAND = &quot;1&quot;;
+    public static final String PRINT_REPORT_DISPLAY_COMMAND = &quot;2&quot;;
+    private String currentStatue;
+
+    public void setCurrentStatue(String currentStatue) {
+<span class="fc" id="L18">        this.currentStatue = currentStatue;</span>
+<span class="fc" id="L19">    }</span>
+
+
+    public String getNextStatus(String input) {
+<span class="fc" id="L23">        Map&lt;String, String&gt; commandToStatus = ImmutableMap.of(</span>
+                MAIN_MENU_DISPLAY_COMMAND, MAIN_MENU_STATUS,
+                ADD_STUDENT_DISPLAY_COMMAND, ADD_STUDENT_STATUS,
+                PRINT_REPORT_DISPLAY_COMMAND, PRINT_REPORT_STATUS);
+
+<span class="fc" id="L28">        String newStatus = commandToStatus.get(input.trim());</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if (newStatus == null) {</span>
+<span class="fc" id="L30">            newStatus = this.currentStatue;</span>
+        }
+<span class="fc" id="L32">        return newStatus;</span>
+    }
+
+    public boolean isTheSameStatus(String nextStatus) {
+<span class="fc" id="L36">        return nextStatus.equals(this.currentStatue);</span>
+
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

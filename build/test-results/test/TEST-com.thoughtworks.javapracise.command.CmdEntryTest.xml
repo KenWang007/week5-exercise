@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.javapracise.command.CmdEntryTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2018-04-17T13:34:40" hostname="CNjkwang.local" time="0.066">
+  <properties/>
+  <testcase name="should_return_input_num_format_error_output_when_input_2_then_correct_input" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.055"/>
+  <testcase name="should_return_add_student_print_output_when_input_1" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.002"/>
+  <testcase name="should_return_gen_score_sheet_print_output_when_input_2" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.0"/>
+  <testcase name="should_return_main_menu_output_when_input_1_and_then_correct_stu_info" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.002"/>
+  <testcase name="should_return_main_menus_print_output_when_input_0" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.0"/>
+  <testcase name="should_return_add_stu_input_error_output_when_input_1_and_then_wrong_stu_info" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.001"/>
+  <testcase name="should_return_empty_msg_print_output_when_input_error_order" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.0"/>
+  <testcase name="should_return_input_num_format_error_output_when_input_2_then_wrong_input" classname="com.thoughtworks.javapracise.command.CmdEntryTest" time="0.001"/>
+  <system-out><![CDATA[学生null的成绩被添加
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

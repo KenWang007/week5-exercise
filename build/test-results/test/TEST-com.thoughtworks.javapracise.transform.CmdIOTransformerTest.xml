@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-04-17T13:34:40" hostname="CNjkwang.local" time="0.007">
+  <properties/>
+  <testcase name="shoud_get_deduplicated_stu_list_when_input_repeat_nums_text" classname="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" time="0.003"/>
+  <testcase name="shoud_get_empty_stu_list_when_input_no_match_input" classname="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" time="0.0"/>
+  <testcase name="shoud_get_stu_list_when_input_num_text" classname="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" time="0.001"/>
+  <testcase name="shoud_get_report_format_when_input_correct_report" classname="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" time="0.003"/>
+  <testcase name="should_get_stu_when_input_correct_text" classname="com.thoughtworks.javapracise.transform.CmdIOTransformerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

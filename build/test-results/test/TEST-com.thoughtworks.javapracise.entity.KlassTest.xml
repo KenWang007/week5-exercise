@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.javapracise.entity.KlassTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-04-17T13:34:40" hostname="CNjkwang.local" time="0.001">
+  <properties/>
+  <testcase name="should_get_students_after_insert_two_students" classname="com.thoughtworks.javapracise.entity.KlassTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

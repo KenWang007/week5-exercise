@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CmdIOTransformer.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">java-pracise</a> &gt; <a href="index.source.html" class="el_package">com.thoughtworks.javapracise.transform</a> &gt; <span class="el_source">CmdIOTransformer.java</span></div><h1>CmdIOTransformer.java</h1><pre class="source lang-java linenums">package com.thoughtworks.javapracise.transform;
+
+import com.thoughtworks.javapracise.entity.Gradereport;
+import com.thoughtworks.javapracise.entity.StudentInfo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+
+<span class="fc" id="L13">public class CmdIOTransformer {</span>
+
+    private static final String STU_REGREX = &quot;([^, ]+), (\\w+), 数学：(\\d+), 语文：(\\d+), 英语：(\\d+), 编程：(\\d+)&quot;;
+    private static final String STU_NUM_REGREX = &quot;^(\\d+[\\s]*+[,]+[\\s]*)*(\\d+)$&quot;;
+    private static final String reportTemplate = &quot;成绩单\n&quot; +
+            &quot;姓名|数学|语文|英语|编程|平均分|总分 \n&quot; +
+            &quot;========================\n&quot; +
+            &quot;%1$s&quot; +
+            &quot;========================\n&quot; +
+            &quot;全班总分：%2$s\n&quot; +
+            &quot;全班总平均分：%3$s&quot;;
+
+    public StudentInfo formatStudentInfo(String input) {
+<span class="fc" id="L26">        StudentInfo stu = null;</span>
+<span class="fc" id="L27">        Matcher matcher = Pattern.compile(STU_REGREX).matcher(input);</span>
+<span class="pc bpc" id="L28" title="1 of 2 branches missed.">        if (matcher.matches()) {</span>
+<span class="fc" id="L29">            stu = new StudentInfo(matcher.group(1),</span>
+<span class="fc" id="L30">                    matcher.group(2),</span>
+<span class="fc" id="L31">                    Integer.parseInt(matcher.group(3)),</span>
+<span class="fc" id="L32">                    Integer.parseInt(matcher.group(4)),</span>
+<span class="fc" id="L33">                    Integer.parseInt(matcher.group(5)),</span>
+<span class="fc" id="L34">                    Integer.parseInt(matcher.group(6)));</span>
+        }
+<span class="fc" id="L36">        return stu;</span>
+    }
+
+
+    public List&lt;StudentInfo&gt; formatStudentNos(String input) {
+
+<span class="fc" id="L42">        List&lt;StudentInfo&gt; stus = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L43">        Matcher matcher = Pattern.compile(STU_NUM_REGREX).matcher(input);</span>
+<span class="fc" id="L44">        boolean isMatche = matcher.matches();</span>
+
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        if (!isMatche) {</span>
+<span class="fc" id="L47">            return stus;</span>
+        }
+<span class="fc" id="L49">        stus = Arrays.asList(input.trim().split(&quot;,&quot;)).stream()</span>
+<span class="fc" id="L50">                .map(num -&gt; num.trim())</span>
+<span class="fc" id="L51">                .distinct()</span>
+<span class="fc" id="L52">                .map(num -&gt; new StudentInfo(num))</span>
+<span class="fc" id="L53">                .collect(Collectors.toList());</span>
+
+<span class="fc" id="L55">        return stus;</span>
+    }
+
+    public String formatReportText(Gradereport gradereport) {
+        ;
+
+<span class="fc" id="L61">        String gradereportItemTemplate = &quot;%1$s|%2$d|%3$d|%4$d|%5$d|%6$d|%7$d\n&quot;;</span>
+
+<span class="fc" id="L63">        String itemsText = gradereport.getStudentGradeItems().stream()</span>
+<span class="fc" id="L64">                .map(item -&gt; String.format(gradereportItemTemplate, item.getName(),</span>
+<span class="fc" id="L65">                        item.getMathsScore(),</span>
+<span class="fc" id="L66">                        item.getChineseScore(),</span>
+<span class="fc" id="L67">                        item.getEnglishScore(),</span>
+<span class="fc" id="L68">                        item.getProgramScore(),</span>
+<span class="fc" id="L69">                        item.getAvergeScore(),</span>
+<span class="fc" id="L70">                        item.getTotalScore())).collect(Collectors.joining());</span>
+
+
+<span class="fc" id="L73">        return String.format(reportTemplate,</span>
+                itemsText,
+<span class="fc" id="L75">                gradereport.getTotalScore(),</span>
+<span class="fc" id="L76">                gradereport.getAvergeScore());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>

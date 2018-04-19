@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GradeReportBuilder.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">java-pracise</a> &gt; <a href="index.source.html" class="el_package">com.thoughtworks.javapracise.entity</a> &gt; <span class="el_source">GradeReportBuilder.java</span></div><h1>GradeReportBuilder.java</h1><pre class="source lang-java linenums">package com.thoughtworks.javapracise.entity;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class GradeReportBuilder {
+    private final Klass klass;
+
+<span class="fc" id="L9">    public GradeReportBuilder(Klass klass) {</span>
+<span class="fc" id="L10">        this.klass = klass;</span>
+<span class="fc" id="L11">    }</span>
+
+    public Gradereport buildIndicatedStuReport(List&lt;StudentInfo&gt; stuLIst) {
+<span class="fc" id="L14">        Gradereport gradereport = new Gradereport();</span>
+<span class="fc" id="L15">        gradereport.setStudentGradeItems(this.klass.getAllStudent().stream()</span>
+<span class="fc" id="L16">                .filter(s -&gt; stuLIst.stream().anyMatch(indicatedStu -&gt; indicatedStu.getNumber().equals(s.getNumber())))</span>
+<span class="fc" id="L17">                .map(s -&gt; new StudentGradeItem(</span>
+<span class="fc" id="L18">                        s.getName(),</span>
+<span class="fc" id="L19">                        s.getNumber(),</span>
+<span class="fc" id="L20">                        s.getMathsScore(),</span>
+<span class="fc" id="L21">                        s.getChineseScore(),</span>
+<span class="fc" id="L22">                        s.getEnglishScore(),</span>
+<span class="fc" id="L23">                        s.getProgramScore())).collect(Collectors.toList()));</span>
+<span class="fc" id="L24">        return gradereport;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>
