@@ -56,8 +56,6 @@ public class CmdIOTransformer {
     }
 
     public String formatReportText(Gradereport gradereport) {
-        ;
-
         String gradereportItemTemplate = "%1$s|%2$d|%3$d|%4$d|%5$d|%6$d|%7$d\n";
 
         String itemsText = gradereport.getStudentGradeItems().stream()
